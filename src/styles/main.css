@@ -146,3 +146,32 @@ header .column span{
 .piano-keys .key:hover:not(.active) {
   filter: brightness(0.95);
 }
+
+
+/* Adicione ao final do main.css */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  .piano-keys .white {
+    width: 12%;
+    height: 180px;
+  }
+  .piano-keys .black {
+    width: 8%;
+    height: 100px;
+    margin: 0 -4.5% 0 -4.5%;
+  }
+}
+
+/* Dark Mode opcional */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+  .container {
+    background: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
