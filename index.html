@@ -20,15 +20,17 @@
 
 <body>
   <div class="container">
-    <header>
-      <h2>Virtual Piano</h2>
-      <div class="column volume-slider">
-        <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
-      </div>
-      <div class="column keys-check">
-        <span>Teclas</span> <input type="checkbox" checked>
-      </div>
-    </header>
+<header aria-label="Controles do piano">
+  <h1>Virtual Piano</h1>
+  <div class="column volume-slider">
+    <label for="volume">Volume</label>
+    <input id="volume" type="range" min="0" max="1" value="0.5" step="0.01" aria-label="Ajuste de volume">
+  </div>
+  <div class="column keys-check">
+    <label for="show-keys">Mostrar teclas</label>
+    <input id="show-keys" type="checkbox" checked aria-label="Mostrar/ocultar teclas">
+  </div>
+</header>
     <ul class="piano-keys">
       <li class="key white" data-key="a"><span>a</span></li>
       <li class="key black" data-key="w"><span>w</span></li>
