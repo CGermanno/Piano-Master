@@ -36,4 +36,7 @@ keysCheck.addEventListener("change", () => {
   pianoKeys.forEach(key => {
     key.querySelector("span").style.visibility = keysCheck.checked ? "visible" : "hidden";
   });
-});
+})
+
+pianoKeys.forEach(key => key.addEventListener("click", () => playTune(key.dataset.key)));
+;
